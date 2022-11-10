@@ -1,10 +1,10 @@
 ## Python Basic Program by Yann Sko
 
-[ ] age calculator depending on when you were born
+[x] age calculator depending on when you were born
 
-[ ] Sort algorithme
+[x] Sort algorithme
 
-[ ] Convert an int into a string
+[x] Convert an int into a string
 
 ## Goal
 [ ] a Simple Calculator
