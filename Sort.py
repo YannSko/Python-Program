@@ -12,12 +12,12 @@ def Sort(L):
     c = 0
     print(len(L))
     for i in range(0, len(L)-1):
-        if L[i] > L[i+1]:
+        while L[i] > L[i+1]:
             c = L[i]
             L[i] = L[i+1]
             L[i+1] = c
-        if L[i] < L[i+1]:
-            continue
+            i = i-1
+
     print(L)
 
 
