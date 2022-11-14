@@ -4,7 +4,7 @@
 1. [Getting Started](#Getting-Started)
 2. [Goal](#Goal)
 3. [RPG](#Explanation-for-the-Random-Password-Generator)
-5. [Credits](#Credit)
+4. [Credits](#Credit)
 
 
 
