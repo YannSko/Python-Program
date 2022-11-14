@@ -21,6 +21,9 @@
 
 
 ## Goal
+
+[ ] Guessing Game
+
 [x] a Simple Calculator
 
 [ ] Hangman
