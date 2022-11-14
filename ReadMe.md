@@ -30,3 +30,12 @@
 
 
 ## Explanation for the Random Password Generator :
+Seul import autorisé : random
+
+Faire un script python qui génère un mot de passe aléatoire de 8 charactères. A chaque fois que le programme est relancé le résultat doit être différent.
+Le mot de passe devra contenir dans l'ordre : 
+
+    2 uppercase letters from A to Z,
+    2 lowercase letters from a to z,
+    2 digits from 0 to 9,
+    2 punctuation signs such as !, ?, “, # etc.
