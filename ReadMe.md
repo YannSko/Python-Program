@@ -22,8 +22,22 @@
 
 ## Goal
 [x] a Simple Calculator
+
 [ ] Hangman
+
 [ ] Random Password Generator
+
+[ ] creating-a-guessing-game-in-python
+
+[ ] Rock, Paper, Scissors 
+
+## Advanded/bonus for Goal :
+
+### Pour le Password Generator 
+
+Faire en sorte de demander un user lors de la création du mdp , 
+sauvegardé l'ensemble user : mdp dans un fichier " mot_de_passe_sécurisé.txt"
+
 
 
 
