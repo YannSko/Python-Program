@@ -41,9 +41,12 @@
 Faire en sorte de demander un user lors de la création du mdp , 
 sauvegardé l'ensemble user : mdp dans un fichier " mot_de_passe_sécurisé.txt"
 
+### Pour la calculatrice
 
+Ajouter la possibilité d'ajouter autant de chiffres à calculer que le user veut en même temps. 
 
-
+Exemple : " 3+1+4 "
+ou   " 19-3+1"
 
 
 ## Explanation for the Random Password Generator :
