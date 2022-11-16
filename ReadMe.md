@@ -22,16 +22,47 @@
 
 ## Goal
 
+[ ] Année bisextile
+
+Faire une fonction qui reconnait si l'année entrée est une année bisextile 
+
 [ ] Guessing Game
 
 [x] a Simple Calculator
 
-[ ] Hangman
 
 [ ] Random Password Generator
 
 
 [ ] Rock, Paper, Scissors 
+
+## Big project 
+
+[ ] Calculatrice AVEC UI
+
+[ ] Story Generator
+
+Description : Vous aurez 3 listes,
+une liste Début, une liste action et une liste lieu
+
+A chaque démarrage du code, vous aurez un output composé dans l'ordre de : Début -> action -> lieu
+
+Exemple : 
+
+Début = [ Il était une fois, Au début de cette histoire , Tout commença par ]
+
+Action = [Un cadavre découvert , un chien vivant , une femme soumise]
+
+Lieu = [ Sur le lac du connemara, dans la chambre à coucher, Au bahamas]
+
+Fin = [baignant dans le sang de Satan, volant dans le ciel tel un oiseau]
+
+Output 1 : Il était une fois , un cadavre découvert sur le lac du Connemara volant dans le ciel tel un oiseau
+
+Output 2 :  Tout commença par un chien vivant au bahamas Baignant dans le sang de Satan
+
+[ ] Hangman
+
 
 ## Advanded/bonus for Goal :
 
@@ -58,3 +89,7 @@ Le mot de passe devra contenir dans l'ordre :
     2 lowercase letters from a to z,
     2 digits from 0 to 9,
     2 punctuation signs such as !, ?, “, # etc.
+
+## Cours 
+
+[ ] Apprendre PySimpleGUI ( pour l'ui en python )
