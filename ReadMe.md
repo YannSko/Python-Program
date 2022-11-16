@@ -30,7 +30,6 @@
 
 [ ] Random Password Generator
 
-[ ] creating-a-guessing-game-in-python
 
 [ ] Rock, Paper, Scissors 
 
