@@ -1,44 +1,35 @@
 import PySimpleGUI as sg
 
+
+sg.theme("DarkGrey3")
 col_1 = [
-    [sg.B('1')],
-    [sg.B('2')],
-    [sg.B('3', key="-3-")],
+        [sg.B('7', size=(8, 4), font="bold"), sg.B('8', size=(8, 4),
+                                                   font="bold"), sg.B('9', size=(8, 4), font="bold")],
+        [sg.B('4', size=(8, 4), font="bold"), sg.B('5', size=(8, 4),
+                                                   font="bold"), sg.B('6', size=(8, 4), font="bold")],
+        [sg.B('1', size=(8, 4), font="bold"), sg.B('2', size=(8, 4),
+                                                   font="bold"), sg.B('3', size=(8, 4), font="bold")],
+        [sg.B('+/-', size=(8, 4), font="bold", key="-OPOSITE-"), sg.B('0', size=(8,
+                                                                                 4), font="bold"), sg.B('.', size=(8, 4), font="bold", key="-DOT-")],
 ]
 col_2 = [
-    [sg.B('4', key="-4-")],
-    [sg.B('5', key="-5-")],
-    [sg.B('6', key="-6-")],
+        [sg.B('*', size=(8, 4), key="-MULTI-", font="bold")],
+        [sg.B('-', size=(8, 4), key="-MINUS-", font="bold")],
+        [sg.B('+', size=(10, 5), key="-PLUS-", font="bold")],
 ]
 col_3 = [
-    [sg.B('7', key="-7-")],
-    [sg.B('8', key="-8-")],
-    [sg.B('9', key="-9-")],
+        [sg.B('/', size=(8, 4), key="-DEVID-", font="bold")],
+        [sg.B('-->', size=(8, 4), key="-CLEAR-", font="bold")],
+        [sg.B('CE', size=(8, 4), key="-CEVERY-", font="bold")],
+        [sg.B('=', size=(8, 4), key="-EQUAL-", font="bold")],
 ]
-
-col_4 = [
-    [sg.B('+', key="-PLUS-")],
-    [sg.B('-', key="-MINUS-")],
-    [sg.B('*', key="-MULTI-")],
-    [sg.B('/', key="-DEVID-")],
-    [sg.B('=', key="-EQUAL-")],
-    [sg.B('-->', key="-CLEAR-")],
-]
-
-# printed = [
-#   [sg.T()]
-# ]
 
 layout = [
-    [sg.I(size=(13, 1), font=(None, 30), key="-INPUT-", enable_events=True)],
-    [sg.Col(col_1), sg.VerticalSeparator(), sg.Col(
-        col_2), sg.VerticalSeparator(), sg.Col(col_3), sg.VerticalSeparator(),
-        sg.Col(col_4)]
+    [sg.I(size=(13, 1), font=(None, 60), key="-INPUT-", enable_events=True)],
+    [sg.Col(col_1), sg.VerticalSeparator(), sg.Col(col_2), sg.Col(col_3)],
 ]
-
-num = [int(i) for i in range(10)]
-window = sg.Window("Calculatrce", layout)
-
+window = sg.Window("Calculator", layout)
+num = [str(i) for i in range(10)]
 history = ''
 operator = ["-DEVID-", "-MULTI-", "-PLUS-", "-MINUS-"]
 while True:
@@ -70,5 +61,14 @@ while True:
         if len(history) > 0:
             history = history[:-1]
             window["-INPUT-"].update(history)
+    elif event == "-CEVERY-":
+        history = ''
+        num_1 = 0
+        num_2 = 0
+        op = ''
+        window["-INPUT-"].update(history)
+    elif event == "-OPOSITE-":
+        history = str(int(history) * -1)
+        window["-INPUT-"].update(history)
 
     print(event, values)
