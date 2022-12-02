@@ -17,22 +17,32 @@ col_3 = [
 ]
 
 col_4 = [
-    [sg.B("+", key="-+-")],
-    [sg.B("-", key="---")],
-    [sg.B("/", key="-/-")],
-    [sg.B("=", key="-=-")],
+    [sg.B("+", key="-PLUS-")],
+    [sg.B("-", key="-MINUS-")],
+    [sg.B("/", key="-DEVID-")],
+    [sg.B("=", key="-EQUAL-")],
+    [sg.B("-->", key="-CLEAR-")],
 ]
 
-printed = [
-    [sg.T()]
-]
+# printed = [
+#   [sg.T()]
+# ]
 
 layout = [
+    [sg.I(font=(None, 30), size=(13, 1), key="-INPUT-")],
     [sg.Col(col_1), sg.VerticalSeparator(), sg.Col(
         col_2), sg.VerticalSeparator(), sg.Col(col_3), sg.VerticalSeparator(),
         sg.Col(col_4)]
 ]
 
+num = [str(i) for i in range(10)]
 window = sg.Window("Calculatrce", layout)
-event, values = window.read()
-print(event, values)
+history = ''
+while True:
+    event, values = window.read()
+    if event == sg.WIN_CLOSED:
+        break
+        window.close()
+    elif event in num:
+        history += num
+        window["-INPUT-"].update(event)
