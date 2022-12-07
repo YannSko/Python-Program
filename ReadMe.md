@@ -26,7 +26,27 @@
 
 Faire une fonction qui reconnait si l'année entrée est une année bisextile 
 
-[ ] Guessing Game
+[ ] Guessing Game 
+
+ Comment ça marche ? 
+ 
+ L'ordinateur va choisir un nombre aléatoire entre 1 et 100 , le joueur a 7 essai pour trouver le nombre que l'ordinateur a choisi.
+ 
+ A chaque proposition de l'humain, l'ordinateur a trois façon de répondre :
+ 
+ 
+ Your guess is too low
+ 
+ Your guess is too high
+ 
+ You guessed the number in X tries!
+ 
+ 
+[ ] Guessing_Game 2
+
+Même chose mais cette fois le joueur réflechi à un chiffre et c'est à l'ordinateur de le trouver
+
+L'ordi devra deviner le chiffre que l'humain a choisi
 
 [x] a Simple Calculator
 
