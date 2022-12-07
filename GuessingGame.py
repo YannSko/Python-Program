@@ -3,17 +3,21 @@ import random
 
 def Guess():
     Guess_Number = random.randint(0, 1000)
-    i = 0
+    i = False
     print(Guess_Number)
-    while i <= 3:
-        i += 1
+    while i ==False:
+        
         Try = int(input("Lets find the good number \n"))
+        
         if Try < Guess_Number:
             print("You are too Low")
-        if Try > Guess_Number:
+        elif Try > Guess_Number:
             print("You are too High")
-        if Try == Guess_Number:
+        elif Try == Guess_Number:
             print("gg Wp")
+            i=True   
+            
+        
 
 
 Guess()
