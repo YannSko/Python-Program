@@ -3,6 +3,8 @@ import random
 def Guess():
     print("the ordi will find your number")
     testnumb=50
+    min=0
+    max=100
     i=True
     while i==True:
         print("is it " +str(testnumb)+"?"'\n')
