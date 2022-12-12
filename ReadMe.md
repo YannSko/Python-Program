@@ -26,7 +26,7 @@
 
 Faire une fonction qui reconnait si l'année entrée est une année bisextile 
 
-[ ] Guessing Game 
+[x] Guessing Game 
 
  Comment ça marche ? 
  
@@ -51,14 +51,14 @@ L'ordi devra deviner le chiffre que l'humain a choisi
 [x] a Simple Calculator
 
 
-[ ] Random Password Generator
+[x] Random Password Generator
 
 
-[ ] Rock, Paper, Scissors 
+[x] Rock, Paper, Scissors 
 
 ## Big project 
 
-[ ] Calculatrice AVEC UI
+[x] Calculatrice AVEC UI
 
 [ ] Story Generator
 
@@ -112,4 +112,4 @@ Le mot de passe devra contenir dans l'ordre :
 
 ## Cours 
 
-[ ] Apprendre PySimpleGUI ( pour l'ui en python )
+[x] Apprendre PySimpleGUI ( pour l'ui en python )
