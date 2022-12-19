@@ -16,3 +16,13 @@ def CommonWord(a, b):
     return common_words
 
 print(CommonWord(a, b ))
+
+
+#2 method avec set
+
+def CommonWord2(a,b):
+    words_a = set(a.lower().split(" "))
+    words_b = set(b.lower().split(" "))
+    return list(words_a & words_b)
+
+print(CommonWord2(a, b))
