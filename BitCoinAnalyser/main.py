@@ -8,7 +8,7 @@ url = BASE_URL + 'v1/assets'
 headers = {'X-CoinAPI-Key': API_KEY}
 response = requests.get(url, headers=headers)
 
-data = json.loads(response.text)
+
 
 # 200 / sinon afficher le code d'erreur
 if response.status_code == 200:
