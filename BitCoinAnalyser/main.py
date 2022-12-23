@@ -24,6 +24,7 @@ if response.status_code == 200:
             print(d["asset_id"] + ": " + d["name"])
 
     print()
+    print("Quota restant", response.headers["x-ratelimit-remaining"])
 else:
     # cas d'erreur
     print("L'appel à l'API a retourné une erreur:", response.status_code)
